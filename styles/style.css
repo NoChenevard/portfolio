@@ -206,13 +206,22 @@ body {
     display: inline-block;
 }
 
+.portfolio-container .works div[class^="work-"]{
+    overflow: hidden;
+}
+.portfolio-container .works img:hover{
+    transform: scale(1.05);
+}
+.portfolio-container .works img{
+    transition-duration: 0.3s;
+}
+
 .portfolio-container .works h3{
     position: absolute;
     top: 5%;
     display: inline-block;
     left: 35%;
 }
-
 /* DEV WORKS */
 .portfolio-container .works .dev-container{
     position: absolute;
@@ -224,6 +233,7 @@ body {
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     will-change: transform;
 }
+
 
 .portfolio-container .works .dev-container .work-1{
     position: absolute;
@@ -278,8 +288,73 @@ body {
     color:aliceblue;
 
 }
-.portfolio-container .works  span:hover{
-    opacity: 0.6;
+/* TOOLS */
+
+.portfolio-container .works .tools{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    top: 80%;
+}
+
+.portfolio-container .works .dev-container .tools {
+    position: absolute;
+    width: 100%;
+}
+.portfolio-container .works .dev-container .tools img {
+    border-radius: 0;
+}
+.portfolio-container .works .work-1 .tools img.html-logo{
+    position: absolute;
+    left: 30%;
+    width: 8%;
+}
+.portfolio-container .works .work-1 .tools img.css-logo{
+    position: absolute;
+    left: 45%;
+    width: 8%;
+}
+.portfolio-container .works .work-1 .tools img.js-logo{
+    position: absolute;
+    left: 60%;
+    width: 8%;
+}
+.portfolio-container .works .work-2 .tools img.html-logo{
+    position: absolute;
+    left: 30%;
+    width: 8%;
+}
+.portfolio-container .works .work-2 .tools img.css-logo{
+    position: absolute;
+    left: 45%;
+    width: 8%;
+}
+.portfolio-container .works .work-2 .tools img.js-logo{
+    position: absolute;
+    left: 60%;
+    width: 8%;
+}
+.portfolio-container .works .work-3 .tools img.html-logo{
+    position: absolute;
+    left: 30%;
+    width: 8%;
+}
+.portfolio-container .works .work-3 .tools img.css-logo{
+    position: absolute;
+    left: 45%;
+    width: 8%;
+}
+.portfolio-container .works .work-3 .tools img.js-logo{
+    position: absolute;
+    left: 60%;
+    width: 8%;
+}
+.portfolio-container .works .work-3 .tools img.greensock-logo{
+    position: absolute;
+    top: -2%;
+    left: 75%;
+    width: 10%;
 }
 
 

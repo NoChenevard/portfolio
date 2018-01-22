@@ -43,6 +43,7 @@ $designButton.addEventListener('click',()=>
     $designContainer.style.transform=`translateX(${0})`
     $devContainer.style.transform=`translateX(${-100}%)`
 })
+
 const $devContainer = document.querySelector('.dev-container')
 const $devButton = document.querySelector('h2.dev')
 $devButton.addEventListener('click',()=>
