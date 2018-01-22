@@ -1,5 +1,4 @@
 const cursorParallax = new CursorParallax()
-// const horizontalScroll = new horizontalScroll()
 
 
 const $fillLine=document.querySelector('.fill-line')
@@ -7,9 +6,6 @@ document.addEventListener('scroll',()=>
 {
     let ratioScroll = (window.pageYOffset/1646)
     $fillLine.style.transform=`scaleY(${ratioScroll})`
-    // console.log(document.querySelector('body').scrollHeight)
-    console.log(window.pageYOffset)
-
 })
 
 
