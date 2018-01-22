@@ -1,0 +1,237 @@
+
+body{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to left, rgb(236, 211, 183), rgb(255, 235, 235), rgb(236, 211, 183));
+
+}
+.player{ 
+    position: absolute;
+    left: 23%;   
+    margin-top: 5%;
+}
+.player>img {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    cursor: pointer;
+    will-change: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.player>img:hover {
+    opacity: 0.7;
+}
+.player .player_controls{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    height: 40px;
+    background: #d3d3d3;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    will-change: opacity;
+}
+.player.is_over .player_controls{
+    opacity: 1;
+
+}
+
+/* VIDEO CONTROLS  */
+/* Play pause button */
+.player .player_controls .play_pause{
+    position: absolute;
+    bottom: 12%;
+    left: 1%;
+}
+.player .play_pause img{
+    z-index: 5;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.player .play_pause:hover img{
+    opacity: 0.5;
+}
+/* Seek bar for the video  */
+.player .seek-bar{
+    position: absolute;
+    top:-25%;
+    left: 0%;
+    width: 100%;
+    height: 12px;
+    background: #b6b6b6;
+    cursor: pointer;
+}
+.player .seek-bar .fill-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e70000;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    will-change: transform;
+}
+/* Drag ball for the video  */
+.player .seek-bar .drag_ball {
+    position: absolute;
+    top: -2px;
+    z-index: 2;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #616161;
+}
+
+/* TIMER */
+.player .player_controls .timer{
+    position: absolute;
+    bottom: 25%;
+    left: 5%
+}
+
+
+/* SOUND CONTROLS */
+.player .player_controls .sound{
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+    cursor: pointer;
+    z-index: 5;
+    width: 150px;
+}
+.player .sound:hover img{
+    opacity: 0.5;
+}
+/* Seek bar for the sound  */
+.player .sound .sound-bar{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: -2;
+    width: 80px;
+    height: 15px;
+    border-radius: 5px;
+    transform-origin: left;
+    background: #b6b6b6;
+    will-change: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+/* Fill bar for the sound  */
+.player .sound .fill-bar{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: -1;
+    width: 80px;
+    height: 15px;
+    border-radius: 5px;
+    background: #490bdb;
+    will-change: transform;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+
+}
+
+/* Invisible div here to be clicked */
+.player .sound .js-clickable{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 0;
+    width: 80px;
+    height: 15px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+
+/* QUALITY CONTROLS */
+
+.player .quality {
+    position: absolute;
+    bottom:125%;
+    right: 8%;
+    width: 50px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.player .quality img {
+    position: absolute;
+    bottom: -42%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 1;
+}
+.player .quality:hover img{
+    opacity: 0.5;
+}
+.player .quality.is_clicked{
+    opacity: 1;
+}
+.player .quality.is_clicked div{
+    opacity: 1;
+}
+/* Bloc quality visible onlick */
+.player .player_controls .quality_container {
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+    background: #b6b6b6;
+    opacity: 0;
+}
+/* quality div */
+.player .player_controls .quality_container div {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 1;
+}
+.player .player_controls .quality_container div:hover {
+    color: rgb(243, 243, 243);
+}
+.player .player_controls .quality_container .quality_720{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.player .player_controls .quality_container .quality_360{
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+.player .player_controls .quality_container .quality_240{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+
+/* FULL SCREEN CONTROLS */
+.player .player_controls .full_screen_button{
+    position: absolute;
+    top: 25%;
+    right:1%;
+    cursor: pointer;
+}
+.player .player_controls .full_screen_button img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.player .full_screen_button:hover img{
+    opacity: 0.5;
+}

@@ -1,0 +1,440 @@
+body {
+    background: linear-gradient(to right, #16222a, #3a6073) fixed;
+}
+.color-yellow
+{
+    color:  #F7CA18;
+}
+.portfolio-container{
+    width: 100%;
+    height: 1500px;
+    font-family: 'Roboto', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Roboto:900");
+    color: #303542;
+    font-weight: bold;
+}
+.portfolio-container .name{
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    will-change: transform;
+    animation-name: start-name;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-duration: 1.5s;
+    opacity: 0;
+    z-index: 10;
+}
+@keyframes start-name
+{
+    0% {transform:translateX(-200px); opacity: 0}
+    90%{transform: translateX(25px)}
+    100% {transform:translateX(0); opacity: 1} 
+}
+
+.portfolio-container h2{
+    top: 0%;
+    display: inline-block;
+    width: 30%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.portfolio-container  h2.dev{
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    display: inline-block;
+}
+.portfolio-container h2.design{
+    position: absolute;
+    top: 110%;
+    right: 10%;
+    display: inline-block;
+}
+/* SOCIAL NETWORKS */
+.portfolio-container .social-section{
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    will-change: transform;
+    animation-name: start-social;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transform:translateX(-400px);
+    will-change: transform opacity;
+    opacity: 0;
+    z-index: 10;
+}
+.portfolio-container .social-section svg{
+    width: 4%;
+    fill:aliceblue;
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition-duration: 0.15s;
+}
+.portfolio-container .social-section svg:hover{
+    fill: #F7CA18;
+}
+
+@keyframes start-social
+{
+    0% {transform:translateX(-400px); opacity:0}
+    90%{transform: translateX(25px)}
+    100% {transform:translateX(0); opacity:1} 
+}
+
+/* BIOGRAPHY */
+.portfolio-container .biography{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    font-size: 3.5vw;
+    color: #f4f5f7;
+    transform:translateY(-400px);
+    will-change: opacity transform;
+    opacity: 0;
+    animation-name: start-biography;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes start-biography
+{
+    0% {transform:translateY(-600px);opacity: 0}
+    100% {transform:translateX(0); opacity: 1} 
+}
+.portfolio-container .biography p{
+    margin: 0%;
+    will-change: transform;
+}
+
+/* ARROW DOWN */
+.portfolio-container .container-svg{
+    will-change: opacity;
+    transition-duration: 0.5s;
+}
+.portfolio-container .container-svg svg {
+    fill:aliceblue;
+}
+.portfolio-container .arrow-down-1{
+    width: 3%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    will-change: transform opacity;
+    opacity: 0;
+    animation-delay: 4.2s;
+    animation-name: move-arrow-down;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.83, -0.08, 1, 1);
+    animation-direction: alternate-reverse;
+    animation-duration: 0.5s;
+}
+.portfolio-container svg.arrow-down-1{
+    width: 3%;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+}
+.portfolio-container  svg.arrow-down-1:hover {
+    fill: #F7CA18;
+}
+@keyframes move-arrow-down
+{
+    0%{transform:translateY(0); opacity: 1}
+    100%{transform:translateY(10px); opacity: 1}
+}
+.portfolio-container .arrow-down-2{
+    width: 3%;
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    /* cursor: pointer; */
+    will-change: transform;
+    animation-delay: 2s;
+    animation-name: move-arrow-down-2;
+    animation-timing-function:cubic-bezier(0.83, -0.08, 1, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 2.38s;
+    z-index: 0;
+}
+.portfolio-container svg.arrow-down-2 {
+    width: 3%;
+}
+@keyframes move-arrow-down-2
+{
+    0%{transform:translateY(0)}
+    90%{transform:translateY(715px)}
+    100%{transform:translateY(715px); opacity: 0 }
+}
+/* HORIZONTAL SCROLL */
+.horizontal-scroll {
+    position: absolute;
+    left: 0%;
+    width: 0.5%;
+    height: 100%;
+}
+
+.horizontal-scroll .fill-line {
+    position: fixed;
+    top: 0%;
+    width: 0.5%;
+    height: 100%;
+    background: #F7CA18;
+    will-change: transform;
+    transform-origin: 0 0;
+    transition-duration: 0.3s;
+    transition-timing-function:cubic-bezier(0.1, 0.35, 0.35, 0.85);
+    transform: scaleY(0);
+    z-index: 3;
+}
+
+
+/* WORKS */
+.portfolio-container .works{
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    top: 120%;
+    font-size: 2.5vw;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.portfolio-container .works h3{
+    position: absolute;
+    top: 5%;
+    display: inline-block;
+    left: 35%;
+}
+
+/* DEV WORKS */
+.portfolio-container .works .dev-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    color: aliceblue;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.portfolio-container .works .dev-container .work-1{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 50%;
+    width: 35%;
+}
+.portfolio-container .works .dev-container .work-1 img{
+    width: 100%;
+}
+.portfolio-container .works .dev-container .work-2{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    width: 35%;
+    font-size: 50%;
+}
+.portfolio-container .works .dev-container .work-2 img{
+    width: 100%;
+}
+.portfolio-container .works .dev-container .work-3{
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    width: 35%;
+    font-size: 50%;
+}
+.portfolio-container .works .dev-container .work-3 img{
+    width: 100%;
+}
+/* .portfolio-container .works  span{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 250px;
+    display: block;
+    color: #bfc4cf;
+    background-color: rgba(2, 2, 3, 0.8);
+    text-align: center;
+    padding-top: 25%;
+    will-change: opacity;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration:0.5s;
+}
+.portfolio-container .works  span:hover{
+    opacity: 0.6;
+} */
+
+
+/* DESIGN WORKS */
+.portfolio-container .works .design-container{
+    position: absolute;
+    background:rgba(247, 247, 247, 0.1);
+    opacity: 1;
+    top: 0;
+    transform: translateX(100%);
+    display: inline-block;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.portfolio-container .works .design-container h3{
+    left: 38%;
+}
+
+.portfolio-container .works .design-container .work-1{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 50%;
+    width: 35%;
+}
+.portfolio-container .works .design-container .work-1 img{
+    width: 100%;
+}
+.portfolio-container .works .design-container .work-2{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    width: 35%;
+    font-size: 50%;
+}
+.portfolio-container .works .design-container .work-2 img{
+    width: 100%;
+}
+.portfolio-container .works .design-container .work-3{
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    width: 35%;
+    font-size: 50%;
+}
+.portfolio-container .works .design-container .work-3 img{
+    width: 100%;
+}
+
+
+
+
+/* Dev button animation */
+
+  .dev a{
+    color: aliceblue;
+    cursor: pointer;
+}
+ .dev:hover a {
+	color: #F7CA18;
+	background-color: transparent;
+	text-shadow: none;
+}
+
+.fill-title-down{
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    background: #F7CA18;
+    width: 60%;
+    height: 4%;
+    transform: scaleX(0);
+    transition-timing-function: cubic-bezier(0.5, -0.14, 0.36, 1);
+    transition-duration: 0.3s;
+    transform-origin: 100% 0;
+}
+ .dev:hover .fill-title-down{
+
+    transform: scaleX(1);
+}
+.fill-title-up{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    background: #F7CA18;
+    width: 60%;
+    height: 4%;
+    transform: scaleX(0);
+    transition-timing-function: cubic-bezier(0.5, -0.14, 0.36, 1);
+    transition-duration: 0.3s;
+    transform-origin: 0 0 ;
+}
+ .dev:hover .fill-title-up{
+
+    transform: scaleX(1);
+}
+.fill-title-left{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    background: #F7CA18;
+    width: 0.5%;
+    height: 140%;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, -0.14, 0.36, 1);
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+ .dev:hover .fill-title-left{
+
+    transform: scaleY(1);
+}
+.fill-title-right{
+    position: absolute;
+    top: -20%;
+    left: 79.5%;
+    background: #F7CA18;
+    width: 0.5%;
+    height: 140%;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+    transition-timing-function: cubic-bezier(0.5, -0.14, 0.36, 1);
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+.dev:hover .fill-title-right{
+
+    transform: scaleY(1);
+}
+
+/* Design button animation */
+
+  .design a{
+    color: aliceblue;
+    cursor: pointer;
+}
+ .design:hover a {
+	color: #F7CA18;
+	background-color: transparent;
+	text-shadow: none;
+}
+
+
+ .design:hover .fill-title-down{
+
+    transform: scaleX(1);
+}
+
+ .design:hover .fill-title-up{
+
+    transform: scaleX(1);
+}
+
+ .design:hover .fill-title-left{
+
+    transform: scaleY(1);
+}
+
+ .design:hover .fill-title-right{
+
+    transform: scaleY(1);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+      <head>
+        <meta charset="utf-8">
+        <title> Homemade Player </title>
+        <link rel="icon" type="images/png" sizes="32x32" href="images/programming-32.png">
+        <link rel="icon" type="images/png" sizes="16x16" href="images/programming-16.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+        <link rel="stylesheet" href="styles/reset.css"> 
+        <link rel="stylesheet" href="styles/style.css"> 
+    </head>
+    <body>
+        <div class="player">
+            <video src="video/video.mp4" width="800" poster="images/videoPoster.jpg"></video>
+            <img src="images/bigPLay.png" alt="play pause" width="100px">
+            <div class="player_controls">
+                    <div class="current_timer">
+                        
+                    </div>
+                    <div class="play_pause"><img src="images/play-button.png" alt="button play"></div>
+                    <div class="seek-bar">
+                        <div class="fill-bar"></div>
+                        <div class="drag_ball"></div>
+                    </div>
+                    <div class="timer">
+                        0:00
+                    </div>
+                    <div class="sound">
+                        <img src="images/speaker.png" alt="mute button" width="25px" height="25px">
+                        <div class="js-clickable"></div>
+                        <div class="fill-bar"></div>
+                        <div class="sound-bar"></div>
+                    </div>
+                    <div class="quality">
+                        <img src="images/gear.png" alt="quality button">
+                        <div class="quality_container">
+                            <div href="#" class="quality_720">720p</div>
+                            <div href="#" class="quality_360">360p</div>
+                            <div href="#" class="quality_240">240p</div>
+                        </div>
+                    </div>
+                    <button class="full_screen_button"><img src="images/expand.png" alt="Fullscreen Button"></button>
+            </div> 
+           
+        </div>
+        <script src="scripts/javascript.js"></script>
+    </body>
+</html>
