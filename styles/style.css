@@ -322,12 +322,12 @@ body {
 }
 .portfolio-container .works .work-2 .tools img.html-logo{
     position: absolute;
-    left: 30%;
+    left: 38%;
     width: 8%;
 }
 .portfolio-container .works .work-2 .tools img.css-logo{
     position: absolute;
-    left: 45%;
+    left: 53%;
     width: 8%;
 }
 .portfolio-container .works .work-2 .tools img.js-logo{
@@ -337,23 +337,23 @@ body {
 }
 .portfolio-container .works .work-3 .tools img.html-logo{
     position: absolute;
-    left: 30%;
+    left: 23%;
     width: 8%;
 }
 .portfolio-container .works .work-3 .tools img.css-logo{
     position: absolute;
-    left: 45%;
+    left: 38%;
     width: 8%;
 }
 .portfolio-container .works .work-3 .tools img.js-logo{
     position: absolute;
-    left: 60%;
+    left: 53%;
     width: 8%;
 }
 .portfolio-container .works .work-3 .tools img.greensock-logo{
     position: absolute;
     top: -2%;
-    left: 75%;
+    left: 68%;
     width: 10%;
 }
 
