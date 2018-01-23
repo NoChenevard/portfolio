@@ -49,8 +49,8 @@ class CursorParallax
             window.requestAnimationFrame(loop)
             for (const item of this.items)
             {
-                const offsetX = -this.mouse.x * 100 * item.amplitude
-                const offsetY = -this.mouse.y * 100 * item.amplitude
+                const offsetX = this.mouse.x * 100 * item.amplitude
+                const offsetY = this.mouse.y * 100 * item.amplitude
                 item.offsetX += (offsetX - item.offsetX)*0.1
                 item.offsetY += (offsetY - item.offsetY)*0.1
                 
