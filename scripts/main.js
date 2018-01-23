@@ -27,7 +27,10 @@ for($arrow of $arrowContainer)
     })
     $arrow.addEventListener('click',()=>
     {
-        scrollTo(0,750)
+        window.scroll({
+            top: 700,
+            behavior: "smooth"
+          });
     })
 }
 

@@ -288,7 +288,7 @@ body {
     color:aliceblue;
 
 }
-/* TOOLS */
+/* TOOLS DEVELOPMENT */
 
 .portfolio-container .works .tools{
     position: absolute;
@@ -374,42 +374,72 @@ body {
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     will-change: transform;
 }
-.portfolio-container .works .design-container h3{
-    left: 38%;
-}
-
 .portfolio-container .works .design-container .work-1{
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top: 15%;
+    left: 15%;
     font-size: 50%;
-    width: 35%;
+    width: 30%;
+    height: 25%;
+    background:rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 .portfolio-container .works .design-container .work-1 img{
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .portfolio-container .works .design-container .work-2{
     position: absolute;
-    top: 32%;
-    left: 30%;
-    width: 35%;
+    top: 15%;
+    right: 15%;
     font-size: 50%;
+    width: 30%;
+    height: 25%;
+    background:rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 .portfolio-container .works .design-container .work-2 img{
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .portfolio-container .works .design-container .work-3{
     position: absolute;
-    top: 54%;
-    left: 30%;
-    width: 35%;
+    top: 45%;
+    left: 15%;
     font-size: 50%;
+    width: 30%;
+    height: 25%;
+    background:rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 .portfolio-container .works .design-container .work-3 img{
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.portfolio-container .works .design-container span{
+    position: absolute;
+    top: 70%; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:aliceblue;
+
 }
 
+/* TOOLS DESIGN */
 
+
+.portfolio-container .works .design-container .tools {
+    position: absolute;
+    width: 100%;
+}
+.portfolio-container .works .design-container .tools img {
+    border-radius: 0;
+    display: none;
+}
 
 
 /* Dev button animation */
