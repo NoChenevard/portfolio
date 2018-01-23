@@ -56,4 +56,22 @@ $devButton.addEventListener('click',()=>
 })
 
 
-console.log('Noé')
+
+
+// Element apparition with the scroll
+
+const $designTitle = document.querySelector('.design')
+const $devTitle = document.querySelector('.dev')
+document.addEventListener('scroll',()=>
+{
+    if(window.pageYOffset>200)
+    {
+        $designTitle.classList.add('is-visible')
+        $devTitle.classList.add('is-visible')
+    }
+    if (window.pageYOffset>500)
+    {
+        $devContainer.classList.add('is-visible')
+    }
+})
+

@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to right, #16222a, #3a6073) fixed;
+    overflow-x: hidden;
 }
 .color-yellow
 {
@@ -202,13 +203,9 @@ body {
     position: absolute;
     top: 120%;
     font-size: 2.5vw;
-    overflow: hidden;
     display: inline-block;
 }
 
-.portfolio-container .works div[class^="work-"]{
-    overflow: hidden;
-}
 .portfolio-container .works img:hover{
     transform: scale(1.05);
 }
@@ -224,9 +221,13 @@ body {
 }
 /* DEV WORKS */
 .portfolio-container .works .dev-container{
+    transform: translateX(-100%);
+}
+.portfolio-container .works .dev-container.is-visible{
     position: absolute;
     width: 100%;
     height: 100%;
+    transform: translateX(0%);
     background: rgba(0,0,0,0.1);
     color: aliceblue;
     transition-duration: 0.8s;
@@ -444,6 +445,19 @@ body {
 
 /* Dev button animation */
 
+h2.dev {
+    transform: translateX(-150%);
+    transition-duration: 1.2s;
+    transition-timing-function:cubic-bezier(0.4, 0.91, 0.72, 1.05);
+    will-change: transform;
+}
+h2.dev.is-visible {
+    transform: translateX(0);
+    transition-duration: 2.4s;
+    will-change: transform;
+    transition-timing-function: cubic-bezier(0.4, 0.91, 0.72, 1.05);
+}
+
   .dev a{
     color: aliceblue;
     cursor: pointer;
@@ -527,6 +541,19 @@ body {
 
 /* Design button animation */
 
+h2.design {
+    transform: translateX(100%);
+    transition-duration: 2.4s;
+    transition-timing-function: cubic-bezier(0.4, 0.91, 0.72, 1.05);
+    ;
+    will-change: transform;
+}
+h2.design.is-visible {
+    transform: translateX(0);
+    transition-duration: 2.4s;
+    transition-timing-function: cubic-bezier(0.4, 0.91, 0.72, 1.05);
+    will-change: transform;
+}
   .design a{
     color: aliceblue;
     cursor: pointer;
