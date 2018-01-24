@@ -4,8 +4,9 @@ const cursorParallax = new CursorParallax()
 const $fillLine=document.querySelector('.fill-line')
 document.addEventListener('scroll',()=>
 {
-    let ratioScroll = (window.pageYOffset/1646)
+    let ratioScroll = (window.pageYOffset/1766)
     $fillLine.style.transform=`scaleY(${ratioScroll})`
+    console.log(window.pageYOffset)
 })
 
 
@@ -69,7 +70,7 @@ document.addEventListener('scroll',()=>
         $designTitle.classList.add('is-visible')
         $devTitle.classList.add('is-visible')
     }
-    if (window.pageYOffset>500)
+    if (window.pageYOffset>400)
     {
         $devContainer.classList.add('is-visible')
     }
