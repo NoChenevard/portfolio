@@ -624,6 +624,15 @@ h2.design.is-visible {
     transform: scaleY(1);
 }
 
+
+
+
+
+
+                    /*****************RESPONSIVE***********************/
+
+
+
 /* RESPONSIVE SECTION FOR MOBILE */
 
 @media (max-device-width: 600px){
@@ -746,3 +755,211 @@ h2.design.is-visible {
     }
 
 }
+
+
+
+/* RESPONSIVE FOR DEVICE 900-1200px */
+@media (max-width: 1200px){
+    .portfolio-container h2 {
+        width: 39%;
+        font-size: 3vw;
+        text-align: center;
+    }
+    .portfolio-container h2.dev{
+        top: 55vw;
+    }
+    .portfolio-container h2.design{
+        top: 55vw;
+    }
+}
+
+@media (max-width: 1200px){
+    .portfolio-container .works{
+        position: absolute;
+        top: 60vw;
+        height: 250vw;
+    }
+}
+
+@media (max-width: 1200px){
+    .portfolio-container .works .dev-container h3{
+        top: 3vw;
+        font-size: 2.5vw;
+        left: 35%;
+    }
+    .portfolio-container .works .design-container h3{
+        top: 3vw;
+        font-size: 2.5vw;
+        left: 40%;
+    }
+}
+@media (max-width: 1200px){
+    /* Dev container Responsive */
+    .portfolio-container .works .dev-container div[class^="work-"]{
+        width: 60vw;
+        left: 20%;
+        font-size: 2vw;
+    }
+    .portfolio-container .works  span{
+        left: 0;
+        bottom: 5vw;
+    }
+    .portfolio-container .works .dev-container .work-1{
+        top: 10vw;
+        height: 50vw;
+    }
+    .portfolio-container .works .dev-container .work-2{
+        top: 65vw;
+        height: 50vw;
+    }
+    .portfolio-container .works .dev-container .work-3{
+        top: 120vw;
+        height: 50vw;
+    }
+    /* Design container Responsive */
+    .portfolio-container .works .design-container div[class^="work-"]{
+        width: 60vw;
+        left: 20%;
+        font-size: 2vw;
+    }
+    .portfolio-container .works .design-container .work-1{
+        top: 10vw;
+        height: 50vw;
+    }
+    .portfolio-container .works .design-container .work-2{
+        top: 65vw;
+        height: 50vw;
+    }
+    .portfolio-container .works .design-container .work-3{
+        top: 120vw;
+        height: 50vw;
+    }
+
+}
+
+
+
+/* RESPONSIVE FOR DEVICE < 900px */
+
+@media (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/* Titles responsive */
+
+@media (max-width: 900px){
+    .portfolio-container h2 {
+        width: 39%;
+        border: aliceblue 3px solid;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .portfolio-container h2.dev{
+        top: 125vw;
+    }
+    .portfolio-container h2.design{
+        top: 125vw;
+    }
+}
+/* Social networks responsive */
+@media (max-width: 900px){
+    .portfolio-container .social-section{
+      top:  15%;
+      width: 30%;
+      position: absolute;
+    }
+}
+@media (max-width: 900px){
+    .portfolio-container .social-section svg{
+      top:  250px;
+    }
+}
+/* Biography responsive */
+@media (max-width: 900px){
+    .portfolio-container .biography{
+      font-size: 6vw;
+      top:  70vw;
+    }
+}
+ /*Arrow scroll responsive */
+@media (max-width: 900px){
+    .portfolio-container .container-arrow{
+      display: none;
+    }
+}
+
+
+/* WORK SECTION RESPONSIVE */
+@media (max-width: 900px){
+    .portfolio-container .works{
+        position: absolute;
+        top: 150vw;
+        height: 250vw;
+    }
+}
+@media (max-width: 900px){
+    .portfolio-container .works .dev-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 25%;
+    }
+    .portfolio-container .works .design-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 35%;
+    }
+}
+@media (max-width: 900px){
+    .portfolio-container h2 .fill-title-down, .portfolio-container h2 .fill-title-up, .portfolio-container h2 .fill-title-left, .portfolio-container h2 .fill-title-right{
+      display: none;
+    }
+}
+
+
+@media (max-width: 900px){
+    /* Dev container Responsive */
+    .portfolio-container .works .dev-container div[class^="work-"]{
+        width: 80vw;
+        left: 10%;
+        font-size: 4vw;
+    }
+    .portfolio-container .works  span{
+        left: 0;
+        bottom: 5vw;
+    }
+    .portfolio-container .works .dev-container .work-1{
+        top: 20vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .dev-container .work-2{
+        top: 90vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .dev-container .work-3{
+        top: 160vw;
+        height: 60vw;
+    }
+    /* Design container Responsive */
+    .portfolio-container .works .design-container div[class^="work-"]{
+        width: 80%;
+        left: 10%;
+        font-size: 4vw;
+    }
+    .portfolio-container .works .design-container .work-1{
+        top: 20vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .design-container .work-2{
+        top: 90vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .design-container .work-3{
+        top: 160vw;
+        height: 60vw;
+    }
+
+}
+
+
