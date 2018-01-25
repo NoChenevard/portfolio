@@ -17,7 +17,6 @@ class CursorParallax
             item.offsetX = 0
             item.offsetY = 0
             item.amplitude = parseFloat($element.dataset.amplitude)
-            console.log(item.amplitude)
 
             this.items.push(item)
         }

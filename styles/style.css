@@ -8,6 +8,8 @@ body {
 {
     color:  #F7CA18;
 }
+
+/* Portfolio */
 .portfolio-container{
     overflow: hidden;
     width: 100%;
@@ -38,16 +40,12 @@ body {
     90%{transform: translateX(25px)}
     100% {transform:translateX(0); opacity: 1} 
 }
-@media (max-device-width: 600px){
-    body{
-        overflow-x: hidden;
-    }
+
     .portfolio-container .name{
-      font-size: 4vw;
+      font-size: 2.5vw;
       position: absolute;
     }
-}
-
+/* Titles */
 
 .portfolio-container h2{
     top: 0%;
@@ -69,19 +67,7 @@ body {
     right: 10%;
     display: inline-block;
 }
-@media (max-device-width: 600px){
-    .portfolio-container h2 {
-        width: 39%;
-        border: aliceblue 3px solid;
-        font-size: 5vw;
-    }
-    .portfolio-container h2.dev{
-        top: 125vw;
-    }
-    .portfolio-container h2.design{
-        top: 125vw;
-    }
-}
+
 /* SOCIAL NETWORKS */
 .portfolio-container .social-section{
     position: fixed;
@@ -101,13 +87,7 @@ body {
 }
 
 
-@media (max-device-width: 600px){
-    .portfolio-container .social-section{
-      top:  15%;
-      width: 30%;
-      position: absolute;
-    }
-}
+
 .portfolio-container .social-section svg{
     width: 15%;
     fill:aliceblue;
@@ -128,11 +108,7 @@ body {
 }
 
 
-@media (max-device-width: 600px){
-    .portfolio-container .social-section svg{
-      top:  250px;
-    }
-}
+
 /* BIOGRAPHY */
 .portfolio-container .biography{
     position: absolute;
@@ -154,12 +130,7 @@ body {
     100% {transform:translateX(0); opacity: 1} 
 }
 
-@media (max-device-width: 600px){
-    .portfolio-container .biography{
-      font-size: 6vw;
-      top:  70vw;
-    }
-}
+
 
 .portfolio-container .biography p{
     margin: 0%;
@@ -167,7 +138,7 @@ body {
 }
 
 /* ARROW DOWN */
-.portfolio-container .container-svg{
+.portfolio-container .container-arrow{
     position: absolute;
     top: 600px;
     right: 50px;
@@ -176,12 +147,8 @@ body {
     transition-duration: 0.5s;
 }
 
-@media (max-device-width: 600px){
-    .portfolio-container .container-svg{
-      display: none;
-    }
-}
-.portfolio-container .container-svg svg {
+
+.portfolio-container .container-arrow svg {
     fill:aliceblue;
 }
 .portfolio-container .arrow-down-1{
@@ -232,15 +199,15 @@ body {
     90%{transform:translateY(715px)}
     100%{transform:translateY(715px); opacity: 0 }
 }
-/* HORIZONTAL SCROLL */
-.horizontal-scroll {
+/* PERSONAL SCROLL */
+.personal-scroll {
     position: absolute;
     left: 0%;
     width: 0.5%;
     height: 100%;
 }
 
-.horizontal-scroll .fill-line {
+.personal-scroll .fill-line {
     position: fixed;
     top: 0%;
     width: 0.5%;
@@ -267,13 +234,7 @@ body {
 
 }
 
-@media (max-device-width: 600px){
-    .portfolio-container .works{
-        position: absolute;
-        top: 150vw;
-        height: 250vw;
-    }
-}
+
 .portfolio-container .works div[class^="work-"]{
    overflow: hidden;
 }
@@ -294,18 +255,7 @@ body {
     left: 40%;
 }
 
-@media (max-device-width: 600px){
-    .portfolio-container .works .dev-container h3{
-        top: 5vw;
-        font-size: 5vw;
-        left: 25%;
-    }
-    .portfolio-container .works .design-container h3{
-        top: 5vw;
-        font-size: 5vw;
-        left: 35%;
-    }
-}
+
 /* DEV WORKS */
 
 .portfolio-container .works .dev-container{
@@ -377,7 +327,6 @@ body {
     position: absolute;
     top: 70%; 
     width: 100%;
-    /* height: 500px; */
     text-align: center;
     color:aliceblue;
 
@@ -596,7 +545,6 @@ h2.dev.is-visible {
     transform-origin: 0 0 ;
 }
  .dev:hover .fill-title-up{
-
     transform: scaleX(1);
 }
 .fill-title-left{
@@ -614,7 +562,6 @@ h2.dev.is-visible {
     transition-delay: 0.3s;
 }
  .dev:hover .fill-title-left{
-
     transform: scaleY(1);
 }
 .fill-title-right{
@@ -632,7 +579,6 @@ h2.dev.is-visible {
     transition-delay: 0.3s;
 }
 .dev:hover .fill-title-right{
-
     transform: scaleY(1);
 }
 
@@ -661,34 +607,100 @@ h2.design.is-visible {
 	background-color: transparent;
 	text-shadow: none;
 }
+
+ .design:hover .fill-title-down{
+    transform: scaleX(1);
+}
+
+ .design:hover .fill-title-up{
+    transform: scaleX(1);
+}
+
+ .design:hover .fill-title-left{
+    transform: scaleY(1);
+}
+
+ .design:hover .fill-title-right{
+    transform: scaleY(1);
+}
+
+/* RESPONSIVE SECTION FOR MOBILE */
+
+@media (max-device-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/* Titles responsive */
+
+@media (max-device-width: 600px){
+    .portfolio-container h2 {
+        width: 39%;
+        border: aliceblue 3px solid;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .portfolio-container h2.dev{
+        top: 125vw;
+    }
+    .portfolio-container h2.design{
+        top: 125vw;
+    }
+}
+/* Social networks responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .social-section{
+      top:  15%;
+      width: 30%;
+      position: absolute;
+    }
+}
+@media (max-device-width: 600px){
+    .portfolio-container .social-section svg{
+      top:  250px;
+    }
+}
+/* Biography responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .biography{
+      font-size: 6vw;
+      top:  70vw;
+    }
+}
+ /*Arrow scroll responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .container-arrow{
+      display: none;
+    }
+}
+
+
+/* WORK SECTION RESPONSIVE */
+@media (max-device-width: 600px){
+    .portfolio-container .works{
+        position: absolute;
+        top: 150vw;
+        height: 250vw;
+    }
+}
+@media (max-device-width: 600px){
+    .portfolio-container .works .dev-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 25%;
+    }
+    .portfolio-container .works .design-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 35%;
+    }
+}
 @media (max-device-width: 600px){
     .portfolio-container h2 .fill-title-down, .portfolio-container h2 .fill-title-up, .portfolio-container h2 .fill-title-left, .portfolio-container h2 .fill-title-right{
       display: none;
     }
 }
-
- .design:hover .fill-title-down{
-
-    transform: scaleX(1);
-}
-
- .design:hover .fill-title-up{
-
-    transform: scaleX(1);
-}
-
- .design:hover .fill-title-left{
-
-    transform: scaleY(1);
-}
-
- .design:hover .fill-title-right{
-
-    transform: scaleY(1);
-}
-
-
-
 
 
 @media (max-device-width: 600px){

@@ -1,17 +1,27 @@
+// Init parallax function 
 const cursorParallax = new CursorParallax()
 
-
+// Const related  to the scroll 
 const $fillLine=document.querySelector('.fill-line')
+
+// Const related to the arrow scroll
+const $arrowContainer = document.querySelectorAll('.container-arrow')
+
+// Const related to the work container and title 
+const $designContainer = document.querySelector('.design-container')
+const $designButton = document.querySelector('h2.design')
+const $devContainer = document.querySelector('.dev-container')
+const $devButton = document.querySelector('h2.dev')
+
+// Function to create my own scroll bar 
 document.addEventListener('scroll',()=>
 {
     let ratioScroll = (window.pageYOffset/1766)
     $fillLine.style.transform=`scaleY(${ratioScroll})`
-    console.log(window.pageYOffset)
 })
 
 
-
-const $arrowContainer = document.querySelectorAll('.container-svg')
+// Function to create smooth scroll clicking on the arrow
 for($arrow of $arrowContainer)
 {
     document.addEventListener('scroll',()=>
@@ -35,21 +45,13 @@ for($arrow of $arrowContainer)
     })
 }
 
-
-
-
-
-
-const $designContainer = document.querySelector('.design-container')
-const $designButton = document.querySelector('h2.design')
+// Function to manage the apparition of the design/dev container  clicking on the titles
 $designButton.addEventListener('click',()=>
 {
     $designContainer.style.transform=`translateX(${0})`
     $devContainer.style.transform=`translateX(${-100}%)`
 })
 
-const $devContainer = document.querySelector('.dev-container')
-const $devButton = document.querySelector('h2.dev')
 $devButton.addEventListener('click',()=>
 {
     $devContainer.style.transform=`translateX(${0})`
@@ -59,16 +61,14 @@ $devButton.addEventListener('click',()=>
 
 
 
-// Element apparition with the scroll
+// Title of the work container apparition with the scroll
 
-const $designTitle = document.querySelector('.design')
-const $devTitle = document.querySelector('.dev')
 document.addEventListener('scroll',()=>
 {
     if(window.pageYOffset>200)
     {
-        $designTitle.classList.add('is-visible')
-        $devTitle.classList.add('is-visible')
+        $designButton.classList.add('is-visible')
+        $devButton.classList.add('is-visible')
     }
     if (window.pageYOffset>400)
     {
