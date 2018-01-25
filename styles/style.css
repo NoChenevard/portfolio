@@ -240,9 +240,11 @@ body {
 }
 .portfolio-container .works img:hover{
     transform: scale(1.05);
+    will-change: transform;
 }
 .portfolio-container .works img{
     transition-duration: 0.3s;
+    will-change: transform;
 }
 
 .portfolio-container .works h3{
@@ -326,10 +328,11 @@ body {
 .portfolio-container .works  span{
     position: absolute;
     top: 70%; 
+    left: 0%;
     width: 100%;
     text-align: center;
     color:aliceblue;
-
+    will-change: transform;
 }
 
 
