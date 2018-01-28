@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to right, #16222a, #3a6073) fixed;
+    background: rgb(15, 10, 34) fixed;
+    /* background: linear-gradient(to right, #16222a, #3a6073) fixed; */
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -21,7 +22,7 @@ body {
 }
 .portfolio-container .name{
     color: aliceblue;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-family: 'Oswald', sans-serif;
     position: fixed;
     top: 60px;
@@ -41,10 +42,6 @@ body {
     100% {transform:translateX(0); opacity: 1} 
 }
 
-    .portfolio-container .name{
-      font-size: 2.5vw;
-      position: absolute;
-    }
 /* Titles */
 
 .portfolio-container h2{
@@ -112,7 +109,7 @@ body {
 /* BIOGRAPHY */
 .portfolio-container .biography{
     position: absolute;
-    left: 20%;
+    left: 25%;
     top: 300px;
     font-size: 55px;
     color: #f4f5f7;
@@ -141,12 +138,11 @@ body {
 .portfolio-container .container-arrow{
     position: absolute;
     top: 600px;
-    right: 50px;
+    right: 100px;
     z-index: 10;
     will-change: opacity;
     transition-duration: 0.5s;
 }
-
 
 .portfolio-container .container-arrow svg {
     fill:aliceblue;
@@ -178,27 +174,6 @@ body {
     0%{transform:translateY(0); opacity: 1}
     100%{transform:translateY(10px); opacity: 1}
 }
-.portfolio-container .arrow-down-2{
-    width: 100%;
-    position: absolute;
-    top: -900px;
-    will-change: transform;
-    animation-delay: 2s;
-    animation-name: move-arrow-down-2;
-    animation-timing-function:cubic-bezier(0.83, -0.08, 1, 1);
-    animation-fill-mode: forwards;
-    animation-duration: 2.38s;
-    z-index: 0;
-}
-.portfolio-container svg.arrow-down-2 {
-    width: 40px;
-}
-@keyframes move-arrow-down-2
-{
-    0%{transform:translateY(0)}
-    90%{transform:translateY(715px)}
-    100%{transform:translateY(715px); opacity: 0 }
-}
 /* PERSONAL SCROLL */
 .personal-scroll {
     position: absolute;
@@ -225,7 +200,7 @@ body {
 /* WORKS */
 .portfolio-container .works {
     width: 100%;
-    height: 1500px;
+    height: 100vw;
     overflow: hidden;
     position: absolute;
     top: 1000px;
@@ -400,9 +375,9 @@ body {
 }
 .portfolio-container .works .work-3 .tools img.greensock-logo{
     position: absolute;
-    top: -2%;
+    top: -0.5%;
     left: 68%;
-    width: 10%;
+    width: 9%;
 }
 
 
@@ -636,131 +611,6 @@ h2.design.is-visible {
 
 
 
-/* RESPONSIVE SECTION FOR MOBILE */
-
-@media (max-device-width: 600px){
-    body{
-        overflow-x: hidden;
-    }
-}
-
-/* Titles responsive */
-
-@media (max-device-width: 600px){
-    .portfolio-container h2 {
-        width: 39%;
-        border: aliceblue 3px solid;
-        font-size: 5vw;
-        text-align: center;
-    }
-    .portfolio-container h2.dev{
-        top: 125vw;
-    }
-    .portfolio-container h2.design{
-        top: 125vw;
-    }
-}
-/* Social networks responsive */
-@media (max-device-width: 600px){
-    .portfolio-container .social-section{
-      top:  15%;
-      width: 30%;
-      position: absolute;
-    }
-}
-@media (max-device-width: 600px){
-    .portfolio-container .social-section svg{
-      top:  250px;
-    }
-}
-/* Biography responsive */
-@media (max-device-width: 600px){
-    .portfolio-container .biography{
-      font-size: 6vw;
-      top:  70vw;
-    }
-}
- /*Arrow scroll responsive */
-@media (max-device-width: 600px){
-    .portfolio-container .container-arrow{
-      display: none;
-    }
-}
-
-
-/* WORK SECTION RESPONSIVE */
-@media (max-device-width: 600px){
-    .portfolio-container .works{
-        position: absolute;
-        top: 150vw;
-        height: 250vw;
-    }
-}
-@media (max-device-width: 600px){
-    .portfolio-container .works .dev-container h3{
-        top: 5vw;
-        font-size: 5vw;
-        left: 25%;
-    }
-    .portfolio-container .works .design-container h3{
-        top: 5vw;
-        font-size: 5vw;
-        left: 35%;
-    }
-}
-@media (max-device-width: 600px){
-    .portfolio-container h2 .fill-title-down, .portfolio-container h2 .fill-title-up, .portfolio-container h2 .fill-title-left, .portfolio-container h2 .fill-title-right{
-      display: none;
-    }
-}
-
-
-@media (max-device-width: 600px){
-    /* Dev container Responsive */
-    .portfolio-container .works .dev-container div[class^="work-"]{
-        width: 80vw;
-        left: 10%;
-        font-size: 4vw;
-    }
-    .portfolio-container .works  span{
-        left: 0;
-        bottom: 5vw;
-    }
-    .portfolio-container .works .dev-container .work-1{
-        top: 20vw;
-        height: 60vw;
-    }
-    .portfolio-container .works .dev-container .work-2{
-        top: 90vw;
-        height: 60vw;
-    }
-    .portfolio-container .works .dev-container .work-3{
-        top: 160vw;
-        height: 60vw;
-    }
-    /* Design container Responsive */
-    .portfolio-container .works .design-container div[class^="work-"]{
-        width: 80%;
-        left: 10%;
-        font-size: 4vw;
-    }
-    .portfolio-container .works .design-container .work-1{
-        top: 20vw;
-        height: 60vw;
-    }
-    .portfolio-container .works .design-container .work-2{
-        top: 90vw;
-        height: 60vw;
-    }
-    .portfolio-container .works .design-container .work-3{
-        top: 160vw;
-        height: 60vw;
-    }
-
-}
-
-
-
 /* RESPONSIVE FOR DEVICE 900-1200px */
 @media (max-width: 1200px){
     .portfolio-container h2 {
@@ -966,3 +816,143 @@ h2.design.is-visible {
 }
 
 
+
+/* RESPONSIVE SECTION FOR MOBILE */
+
+@media (max-device-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .personal-scroll {
+        display: none;
+    }
+    h2.dev {
+        transform: translateX(0%);
+    }
+    h2.design {
+        transform: translateX(0%);
+    }
+    .dev-container{
+        transform: translateX(0%);
+    }
+}
+
+/* Titles responsive */
+
+@media (max-device-width: 600px){
+    .portfolio-container h2 {
+        width: 39%;
+        border: aliceblue 3px solid;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .portfolio-container h2.dev{
+        top: 105vw;
+    }
+    .portfolio-container h2.design{
+        top: 105vw;
+    }
+    .portfolio-container .name{
+        position: absolute;
+        top: 10vw;
+        font-size: 4vw;
+}
+}
+/* Social networks responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .social-section{
+      top:  15%;
+      width: 30%;
+      position: absolute;
+    }
+}
+@media (max-device-width: 600px){
+    .portfolio-container .social-section svg{
+      top:  250px;
+    }
+}
+/* Biography responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .biography{
+      font-size: 6vw;
+      top:  50vw;
+      left: 10%;
+    }
+}
+ /*Arrow scroll responsive */
+@media (max-device-width: 600px){
+    .portfolio-container .container-arrow{
+      display: none;
+    }
+}
+
+
+/* WORK SECTION RESPONSIVE */
+@media (max-device-width: 600px){
+    .portfolio-container .works{
+        position: absolute;
+        height: 250vw;
+        top: 120vw;
+    }
+}
+@media (max-device-width: 600px){
+    .portfolio-container .works .dev-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 25%;
+    }
+    .portfolio-container .works .design-container h3{
+        top: 5vw;
+        font-size: 5vw;
+        left: 35%;
+    }
+}
+@media (max-device-width: 600px){
+    .portfolio-container h2 .fill-title-down, .portfolio-container h2 .fill-title-up, .portfolio-container h2 .fill-title-left, .portfolio-container h2 .fill-title-right{
+      display: none;
+    }
+}
+
+
+@media (max-device-width: 600px){
+    /* Dev container Responsive */
+    .portfolio-container .works .dev-container div[class^="work-"]{
+        width: 80vw;
+        left: 10%;
+        font-size: 4vw;
+    }
+    .portfolio-container .works  span{
+        left: 0;
+        bottom: 5vw;
+    }
+    .portfolio-container .works .dev-container .work-1{
+        top: 20vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .dev-container .work-2{
+        top: 90vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .dev-container .work-3{
+        top: 160vw;
+        height: 60vw;
+    }
+    /* Design container Responsive */
+    .portfolio-container .works .design-container div[class^="work-"]{
+        width: 80%;
+        left: 10%;
+        font-size: 4vw;
+    }
+    .portfolio-container .works .design-container .work-1{
+        top: 20vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .design-container .work-2{
+        top: 90vw;
+        height: 60vw;
+    }
+    .portfolio-container .works .design-container .work-3{
+        top: 160vw;
+        height: 60vw;
+    }
+}
