@@ -1,6 +1,19 @@
 // Init parallax function 
 const cursorParallax = new CursorParallax()
-const cursorParallaxMobile = new CursorParallaxMobile()
+
+if (typeof window.orientation !== 'undefined') { 
+    return
+ }
+ else {
+     const objectsParallax=querySelectorAll('.biography p')
+     for(object of objectsParallax)
+     {
+         this.classList.remove('.js-cursor-parallax')
+     }
+     querySelector('body').classList.add('.js-cursor-parallax')
+     const cursorParallaxMobile = new CursorParallaxMobile()
+
+ }
 
 // Const related  to the scroll 
 const $fillLine=document.querySelector('.fill-line')
