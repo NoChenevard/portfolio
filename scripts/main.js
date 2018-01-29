@@ -1,5 +1,6 @@
 // Init parallax function 
 const cursorParallax = new CursorParallax()
+const cursorParallaxMobile = new CursorParallaxMobile()
 
 // Const related  to the scroll 
 const $fillLine=document.querySelector('.fill-line')
