@@ -35,11 +35,27 @@ class CursorParallax
         this.mouse = {}
         this.mouse.x = 0
         this.mouse.y = 0
-        window.addEventListener('mousemove',(event)=>
-        {
-            this.mouse.x = event.clientX/windowWidth - 0.5
-            this.mouse.y = event.clientY/windowHeight - 0.5
-        })
+        // Function to know if the device is a mobile or a desktop
+        function isTouchDevice() {
+            return 'ontouchstart' in document.documentElement;
+        }
+        if (isTouchDevice()) {
+            // parallax on Mobile
+            window.addEventListener('deviceorientation',(event)=>
+            {
+                this.mouse.x = event.gamma/20
+                this.mouse.y = event.beta/20
+                
+            })
+        }
+        else {
+            // parallax on Desktop
+            window.addEventListener('mousemove',(event)=>
+            {
+                this.mouse.x = event.clientX/windowWidth - 0.5
+                this.mouse.y = event.clientY/windowHeight - 0.5
+            })
+        }
     }
     setRAF()
     {

@@ -1,6 +1,5 @@
 // Init parallax function 
 const cursorParallax = new CursorParallax()
-const cursorParallaxMobile = new CursorParallaxMobile()
 
 
 
