@@ -42,7 +42,8 @@ class CursorParallaxMobile
         // })
         window.addEventListener('deviceorientation',(event)=>
         {
-            this.mouse.x = event.gamma/10
+            this.mouse.x = event.gamma/20
+            this.mouse.y = event.beta/20
             
         })
     }
