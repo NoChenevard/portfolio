@@ -253,8 +253,6 @@ body {
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     will-change: transform;
 }
-
-
 .portfolio-container .works .dev-container .work-1{
     position: absolute;
     top: 15%;
@@ -328,6 +326,7 @@ body {
 .portfolio-container .works .dev-container .tools img {
     border-radius: 0;
 }
+
 .portfolio-container .works .work-1 .tools img.html-logo{
     position: absolute;
     left: 30%;
@@ -861,7 +860,7 @@ h2.design.is-visible {
 /* Social networks responsive */
 @media (max-device-width: 600px){
     .portfolio-container .social-section{
-      top:  15%;
+      top:  10%;
       width: 30%;
       position: absolute;
     }
@@ -869,13 +868,14 @@ h2.design.is-visible {
 @media (max-device-width: 600px){
     .portfolio-container .social-section svg{
       top:  250px;
+      width: 30%;
     }
 }
 /* Biography responsive */
 @media (max-device-width: 600px){
     .portfolio-container .biography{
       font-size: 6vw;
-      top:  50vw;
+      top:  55vw;
       left: 15%;
     }
 }

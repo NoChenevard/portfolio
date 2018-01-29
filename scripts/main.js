@@ -40,8 +40,7 @@ for($arrow of $arrowContainer)
     })
     $arrow.addEventListener('click',()=>
     {
-        window.scroll({
-            top: 700,
+        document.querySelector('.dev-container h3').scrollIntoView({
             behavior: "smooth"
           });
     })
