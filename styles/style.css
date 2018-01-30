@@ -860,8 +860,8 @@ h2.design.is-visible {
 /* Social networks responsive */
 @media (max-device-width: 600px){
     .portfolio-container .social-section{
-      top:  10%;
-      width: 30%;
+      top:  15%;
+      width: 25%;
       position: absolute;
     }
 }
@@ -917,9 +917,14 @@ h2.design.is-visible {
 @media (max-device-width: 600px){
     /* Dev container Responsive */
     .portfolio-container .works .dev-container div[class^="work-"]{
-        width: 80vw;
-        left: 10%;
+        width: 100vw;
+        left: 0;
         font-size: 4vw;
+        border-radius: 0;
+        background: rgb(22, 22, 22);
+    }
+    .portfolio-container .works .dev-container div[class^="work-"] img{
+        border-radius: 0;
     }
     .portfolio-container .works  span{
         left: 0;
@@ -927,32 +932,37 @@ h2.design.is-visible {
     }
     .portfolio-container .works .dev-container .work-1{
         top: 20vw;
-        height: 60vw;
+        height: 70vw;
     }
     .portfolio-container .works .dev-container .work-2{
-        top: 90vw;
-        height: 60vw;
+        top: 100vw;
+        height: 70vw;
     }
     .portfolio-container .works .dev-container .work-3{
-        top: 160vw;
-        height: 60vw;
+        top: 180vw;
+        height: 70vw;
     }
     /* Design container Responsive */
     .portfolio-container .works .design-container div[class^="work-"]{
-        width: 80%;
-        left: 10%;
+        width: 100vw;
+        left: 0;
         font-size: 4vw;
+        border-radius: 0;
+        background: rgb(22, 22, 22);
+    }
+    .portfolio-container .works .design-container div[class^="work-"] img{
+        border-radius: 0;
     }
     .portfolio-container .works .design-container .work-1{
         top: 20vw;
-        height: 60vw;
+        height: 70vw;
     }
     .portfolio-container .works .design-container .work-2{
         top: 90vw;
-        height: 60vw;
+        height: 70vw;
     }
     .portfolio-container .works .design-container .work-3{
         top: 160vw;
-        height: 60vw;
+        height: 70vw;
     }
 }
