@@ -82,19 +82,24 @@ let xValueTouch = null
 $devContainer.addEventListener('touchstart',(event)=>
 {
     xValueTouch=event.touches[0].clientX
-    console.log(xValueTouch)
 })
 const $worksContainer = document.querySelector('.works')
+const $h2Dev = document.querySelector('h2.dev')
+const $h2Design = document.querySelector('h2.design')
 $worksContainer.addEventListener('touchmove',(event)=>
 {
-    if(event.touches[0].clientX+100>xValueTouch)
+    if(event.touches[0].clientX+500>xValueTouch)
     {
         $devContainer.style.transform=`translateX(${0})`
         $designContainer.style.transform=`translateX(${100}%)`
+        $h2Dev.style.color="#F7CA18"
+        $h2Design.style.color="aliceblue"
     }
     else 
     {
     $designContainer.style.transform=`translateX(${0})`
     $devContainer.style.transform=`translateX(${-100}%)`
+    $h2Dev.style.color="aliceblue"
+    $h2Design.style.color="#F7CA18"
     }
 })
