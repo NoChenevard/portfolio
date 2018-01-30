@@ -87,7 +87,7 @@ $devContainer.addEventListener('touchstart',(event)=>
 const $worksContainer = document.querySelector('.works')
 $worksContainer.addEventListener('touchmove',(event)=>
 {
-    if(event.touches[0].clientX>xValueTouch)
+    if(event.touches[0].clientX+100>xValueTouch)
     {
         $devContainer.style.transform=`translateX(${0})`
         $designContainer.style.transform=`translateX(${100}%)`
