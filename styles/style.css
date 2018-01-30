@@ -923,6 +923,12 @@ h2.design.is-visible {
         border-radius: 0;
         background:  rgba(157, 158, 255, 0.1);
     }
+    .portfolio-container .works .dev-container{
+        transition-duration: 0.5s;
+    }
+    .portfolio-container .works .dev-container.is-visible{
+        transition-duration: 0.5s;
+    }
     .portfolio-container .works .dev-container div[class^="work-"] img{
         border-radius: 0;
     }
@@ -943,6 +949,9 @@ h2.design.is-visible {
         height: 70vw;
     }
     /* Design container Responsive */
+    .portfolio-container .works .design-container{
+        transition-duration: 0.5s;
+    }
     .portfolio-container .works .design-container div[class^="work-"]{
         width: 100vw;
         left: 0;
