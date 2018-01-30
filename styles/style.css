@@ -921,7 +921,7 @@ h2.design.is-visible {
         left: 0;
         font-size: 4vw;
         border-radius: 0;
-        background: rgb(22, 22, 22);
+        background:  rgba(157, 158, 255, 0.1);
     }
     .portfolio-container .works .dev-container div[class^="work-"] img{
         border-radius: 0;

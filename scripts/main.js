@@ -77,3 +77,24 @@ document.addEventListener('scroll',()=>
     }
 })
 
+
+let xValueTouch = null
+$devContainer.addEventListener('touchstart',(event)=>
+{
+    xValueTouch=event.touches[0].clientX
+    console.log(xValueTouch)
+})
+const $worksContainer = document.querySelector('.works')
+$worksContainer.addEventListener('touchmove',(event)=>
+{
+    if(event.touches[0].clientX>xValueTouch)
+    {
+        $devContainer.style.transform=`translateX(${0})`
+        $designContainer.style.transform=`translateX(${100}%)`
+    }
+    else 
+    {
+    $designContainer.style.transform=`translateX(${0})`
+    $devContainer.style.transform=`translateX(${-100}%)`
+    }
+})
